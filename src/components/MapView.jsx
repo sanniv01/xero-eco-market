@@ -13,38 +13,38 @@ const MapView = () => {
         />
         
         <div className="absolute inset-0">
-          {/* Sample pins - these would be dynamically generated */}
+          {/* Sample pins with improved spacing and hover effects */}
           <div className="absolute" style={{ top: '30%', left: '40%' }}>
-            <div className="relative group cursor-pointer">
+            <div className="relative group cursor-pointer transform transition-transform hover:scale-110">
               <MapPin className="h-8 w-8 text-eco-green-600 drop-shadow-lg" />
-              <div className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 hidden group-hover:block">
-                <div className="bg-white p-2 rounded-lg shadow-lg text-xs whitespace-nowrap">
-                  <strong>Reclaimed Wood Planks</strong><br/>
-                  $15 - Seattle (3.2 mi)
+              <div className="absolute bottom-full mb-3 left-1/2 -translate-x-1/2 hidden group-hover:block">
+                <div className="bg-white p-3 rounded-lg shadow-lg text-xs whitespace-nowrap space-y-1">
+                  <strong className="block text-sm">Reclaimed Wood Planks</strong>
+                  <p className="text-gray-600">$15 - Seattle (3.2 mi)</p>
                 </div>
               </div>
             </div>
           </div>
           
           <div className="absolute" style={{ top: '45%', left: '60%' }}>
-            <div className="relative group cursor-pointer">
+            <div className="relative group cursor-pointer transform transition-transform hover:scale-110">
               <MapPin className="h-8 w-8 text-eco-green-600 drop-shadow-lg" />
-              <div className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 hidden group-hover:block">
-                <div className="bg-white p-2 rounded-lg shadow-lg text-xs whitespace-nowrap">
-                  <strong>Fabric Scraps Bundle</strong><br/>
-                  $8 - New York (1.5 mi)
+              <div className="absolute bottom-full mb-3 left-1/2 -translate-x-1/2 hidden group-hover:block">
+                <div className="bg-white p-3 rounded-lg shadow-lg text-xs whitespace-nowrap space-y-1">
+                  <strong className="block text-sm">Fabric Scraps Bundle</strong>
+                  <p className="text-gray-600">$8 - New York (1.5 mi)</p>
                 </div>
               </div>
             </div>
           </div>
           
           <div className="absolute" style={{ top: '55%', left: '25%' }}>
-            <div className="relative group cursor-pointer">
+            <div className="relative group cursor-pointer transform transition-transform hover:scale-110">
               <MapPin className="h-8 w-8 text-eco-green-600 drop-shadow-lg" />
-              <div className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 hidden group-hover:block">
-                <div className="bg-white p-2 rounded-lg shadow-lg text-xs whitespace-nowrap">
-                  <strong>Metal Scrap Collection</strong><br/>
-                  $22 - Chicago (4.7 mi)
+              <div className="absolute bottom-full mb-3 left-1/2 -translate-x-1/2 hidden group-hover:block">
+                <div className="bg-white p-3 rounded-lg shadow-lg text-xs whitespace-nowrap space-y-1">
+                  <strong className="block text-sm">Metal Scrap Collection</strong>
+                  <p className="text-gray-600">$22 - Chicago (4.7 mi)</p>
                 </div>
               </div>
             </div>
@@ -53,20 +53,20 @@ const MapView = () => {
         
         <div className="absolute bottom-4 right-4 bg-white p-3 rounded-lg shadow-lg">
           <div className="flex flex-col space-y-2">
-            <button className="p-2 hover:bg-gray-100 rounded">
+            <button className="p-2 hover:bg-gray-100 rounded transition-colors">
               <i className="fas fa-plus text-gray-700"></i>
             </button>
-            <button className="p-2 hover:bg-gray-100 rounded">
+            <button className="p-2 hover:bg-gray-100 rounded transition-colors">
               <i className="fas fa-minus text-gray-700"></i>
             </button>
             <div className="border-t border-gray-200 my-1 w-full"></div>
-            <button className="p-2 hover:bg-gray-100 rounded">
+            <button className="p-2 hover:bg-gray-100 rounded transition-colors">
               <i className="fas fa-location-arrow text-gray-700"></i>
             </button>
           </div>
         </div>
         
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <div className="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg max-w-md text-center">
             <i className="fas fa-map-marked-alt text-5xl text-eco-green-500 mb-4"></i>
             <h3 className="text-xl font-semibold mb-2">Interactive Map View</h3>
@@ -86,3 +86,4 @@ const MapView = () => {
 };
 
 export default MapView;
+
