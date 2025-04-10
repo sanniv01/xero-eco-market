@@ -1,73 +1,41 @@
-# Welcome to your Lovable project
-
-## Project info
-
-**URL**: https://lovable.dev/projects/7fb4ee06-7aa9-4989-a2a0-1cad7c62271c
-
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/7fb4ee06-7aa9-4989-a2a0-1cad7c62271c) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/7fb4ee06-7aa9-4989-a2a0-1cad7c62271c) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes it is!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+ EcoDrop – The World’s First Marketplace for Sustainable Waste Assets
+ Theme: Sustainable Business
+ Project Overview
+EcoDrop is a digital platform that turns waste into a tradable asset. Businesses and individuals can list
+reusable waste materials (such as cloth scraps, wood cuttings, leftover food oil, packaging, etc.) for
+others to purchase and repurpose. It creates a circular economy, reducing waste, saving resources,
+and creating new revenue streams from “waste.”
+This platform empowers local businesses, artists, recycling startups, NGOs, and students to reuse
+discarded materials at low cost — while contributing to sustainability.
+ How It Works
+1. Sellers (factories, shops, restaurants, individuals) upload listings of reusable waste materials
+with images, prices, and pickup details.
+2. Buyers browse a marketplace of waste assets, filtered by category, location, material type,
+etc.
+3. They can request pickup or directly arrange local delivery.
+4. Platform shows how much CO₂, water, or plastic was saved per transaction.
+5. Both buyers and sellers get eco-points and badges for contributing to sustainability.
+ Unique Features
+• Marketplace for reusable waste only
+• AI-based reuse suggestions ("What can you make with this?")
+• Map-based sourcing to find waste near your location
+• Eco leaderboard and verified green contributors
+• Live eco-stats: See your carbon footprint reduced in real-time
+ Tech Stack (Suggested)
+Layer Technology
+Frontend React / Next.js
+Backend Node.js + Express / Django
+Layer Technology
+Database Firebase / MongoDB
+Cloud Files Firebase Storage / AWS S3
+Map Service Google Maps API
+AI Tool OpenAI GPT for reuse tips
+ Team Development Plan (7 Days)
+Day Goal
+1 UI Design, Module Planning, Setup GitHub
+2 Auth System, Seller Upload Flow
+3 Buyer Marketplace Feed, Filters
+4 Connect Backend + Firebase Image Upload
+5 Add Map View, Location Filtering
+6 Integrate AI Reuse Suggestions + Testing
+7 Final Polish, Live Listings, and Demo Prep
